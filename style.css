@@ -4,8 +4,9 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-a:hover {
+button:hover {
   opacity: 0.7;
+  cursor: pointer;
 }
 
 header {
@@ -21,6 +22,15 @@ nav {
   /*border: 1px solid red;*/
   display: flex;
   justify-content: center;
+}
+
+.navButton {
+  background-color: black;
+  border: black;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 5.5rem;
 }
 
 .horizontalBar {
@@ -58,7 +68,10 @@ nav {
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+
+.banner > * {
+  margin-bottom: 2rem;
 }
 
 h1 {
@@ -71,6 +84,8 @@ h2 {
 
 #bannerButton {
   border: 1px solid white;
+  background-color: black;
+  color: white;
   border-radius: 1dvb;
   width: 5rem;
   padding: 1rem;
@@ -79,4 +94,35 @@ h2 {
 
 #socialMediaList a {
   opacity: 0.8;
+}
+
+.project {
+  display: flex;
+  align-content: center;
+  margin-bottom: 100px;
+  opacity: 0.7;
+}
+
+.project:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.project img {
+  width: 500px;
+  margin-right: 60px;
+}
+
+.projectlist {
+  align-self: center;
+}
+
+.project li {
+  line-height: 30px;
+  list-style-type: disc;
+  text-align: left;
+}
+
+#projects {
+  height: 70%;
 }
